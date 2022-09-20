@@ -1,3 +1,4 @@
-﻿Public Class Form1
+﻿Public Class input_form
+
 
 End Class
