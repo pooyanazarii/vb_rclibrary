@@ -34,10 +34,10 @@ Partial Class form_add_new_person
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txt_first_name = New System.Windows.Forms.TextBox()
+        Me.txt_last_name = New System.Windows.Forms.TextBox()
+        Me.txt_id_number = New System.Windows.Forms.TextBox()
+        Me.txt_address = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
@@ -80,7 +80,7 @@ Partial Class form_add_new_person
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(384, 73)
+        Me.Label2.Location = New System.Drawing.Point(384, 84)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 30)
         Me.Label2.TabIndex = 3
@@ -100,7 +100,7 @@ Partial Class form_add_new_person
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(405, 220)
+        Me.Label4.Location = New System.Drawing.Point(405, 239)
         Me.Label4.Name = "Label4"
         Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label4.Size = New System.Drawing.Size(57, 30)
@@ -121,7 +121,7 @@ Partial Class form_add_new_person
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(219, 73)
+        Me.Label6.Location = New System.Drawing.Point(219, 84)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(55, 30)
         Me.Label6.TabIndex = 7
@@ -141,7 +141,7 @@ Partial Class form_add_new_person
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(209, 220)
+        Me.Label8.Location = New System.Drawing.Point(30, 9)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(87, 30)
         Me.Label8.TabIndex = 9
@@ -151,7 +151,7 @@ Partial Class form_add_new_person
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(12, 5)
+        Me.Label9.Location = New System.Drawing.Point(12, 84)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(105, 30)
         Me.Label9.TabIndex = 10
@@ -161,50 +161,50 @@ Partial Class form_add_new_person
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Vazir", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(48, 73)
+        Me.Label10.Location = New System.Drawing.Point(48, 152)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(47, 30)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "گروه"
         '
-        'TextBox1
+        'txt_first_name
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(374, 38)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(119, 32)
-        Me.TextBox1.TabIndex = 12
+        Me.txt_first_name.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_first_name.Location = New System.Drawing.Point(374, 42)
+        Me.txt_first_name.Name = "txt_first_name"
+        Me.txt_first_name.Size = New System.Drawing.Size(119, 32)
+        Me.txt_first_name.TabIndex = 12
         '
-        'TextBox2
+        'txt_last_name
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(374, 106)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(119, 32)
-        Me.TextBox2.TabIndex = 13
+        Me.txt_last_name.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_last_name.Location = New System.Drawing.Point(374, 117)
+        Me.txt_last_name.Name = "txt_last_name"
+        Me.txt_last_name.Size = New System.Drawing.Size(119, 32)
+        Me.txt_last_name.TabIndex = 13
         '
-        'TextBox3
+        'txt_id_number
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(374, 185)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(119, 32)
-        Me.TextBox3.TabIndex = 14
+        Me.txt_id_number.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_id_number.Location = New System.Drawing.Point(374, 185)
+        Me.txt_id_number.Name = "txt_id_number"
+        Me.txt_id_number.Size = New System.Drawing.Size(119, 32)
+        Me.txt_id_number.TabIndex = 14
         '
-        'TextBox4
+        'txt_address
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(374, 253)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(119, 32)
-        Me.TextBox4.TabIndex = 15
+        Me.txt_address.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_address.Location = New System.Drawing.Point(12, 272)
+        Me.txt_address.Name = "txt_address"
+        Me.txt_address.Size = New System.Drawing.Size(481, 32)
+        Me.txt_address.TabIndex = 15
         '
         'TextBox5
         '
         Me.TextBox5.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(186, 253)
+        Me.TextBox5.Location = New System.Drawing.Point(12, 42)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(124, 32)
+        Me.TextBox5.Size = New System.Drawing.Size(119, 32)
         Me.TextBox5.TabIndex = 19
         '
         'TextBox6
@@ -218,7 +218,7 @@ Partial Class form_add_new_person
         'TextBox7
         '
         Me.TextBox7.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(186, 106)
+        Me.TextBox7.Location = New System.Drawing.Point(186, 117)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(124, 32)
         Me.TextBox7.TabIndex = 17
@@ -226,7 +226,7 @@ Partial Class form_add_new_person
         'TextBox8
         '
         Me.TextBox8.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(186, 38)
+        Me.TextBox8.Location = New System.Drawing.Point(186, 42)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(124, 32)
         Me.TextBox8.TabIndex = 16
@@ -234,7 +234,7 @@ Partial Class form_add_new_person
         'TextBox9
         '
         Me.TextBox9.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(12, 106)
+        Me.TextBox9.Location = New System.Drawing.Point(12, 185)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(119, 32)
         Me.TextBox9.TabIndex = 21
@@ -242,7 +242,7 @@ Partial Class form_add_new_person
         'TextBox10
         '
         Me.TextBox10.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(12, 38)
+        Me.TextBox10.Location = New System.Drawing.Point(12, 117)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(119, 32)
         Me.TextBox10.TabIndex = 20
@@ -258,10 +258,10 @@ Partial Class form_add_new_person
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_address)
+        Me.Controls.Add(Me.txt_id_number)
+        Me.Controls.Add(Me.txt_last_name)
+        Me.Controls.Add(Me.txt_first_name)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -292,10 +292,10 @@ Partial Class form_add_new_person
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_first_name As System.Windows.Forms.TextBox
+    Friend WithEvents txt_last_name As System.Windows.Forms.TextBox
+    Friend WithEvents txt_id_number As System.Windows.Forms.TextBox
+    Friend WithEvents txt_address As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
