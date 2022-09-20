@@ -275,6 +275,7 @@ Partial Class form_add_new_person
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btn_back)
         Me.Name = "form_add_new_person"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "form_add_new_person"
         Me.ResumeLayout(False)
         Me.PerformLayout()

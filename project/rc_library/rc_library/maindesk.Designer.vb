@@ -387,6 +387,7 @@ Partial Class maindesk
         Me.Controls.Add(Me.btn_add_new_book)
         Me.Controls.Add(Me.Label1)
         Me.Name = "maindesk"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "maindesk"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PersonBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()

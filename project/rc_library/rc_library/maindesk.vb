@@ -9,7 +9,7 @@ Public Class maindesk
         Me.PersonTableAdapter1.Fill(Me.Aseman_library_vbDataSet.person)
         'TODO: This line of code loads data into the 'MakepjDataSet.person' table. You can move, or remove it, as needed.
         Me.PersonTableAdapter.Fill(Me.MakepjDataSet.person)
-        input_form.Hide()
+
     End Sub
 
 
@@ -27,5 +27,10 @@ Public Class maindesk
 
     Private Sub btn_add_new_person_Click(sender As Object, e As EventArgs) Handles btn_add_new_person.Click
         form_add_new_person.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub maindesk_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+
     End Sub
 End Class

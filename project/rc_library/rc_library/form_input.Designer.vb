@@ -24,10 +24,10 @@ Partial Class input_form
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_login = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_rest_password = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,14 +48,14 @@ Partial Class input_form
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "رمز عبور"
         '
-        'Button1
+        'btn_login
         '
-        Me.Button1.Location = New System.Drawing.Point(98, 137)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "ورود"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_login.Location = New System.Drawing.Point(98, 137)
+        Me.btn_login.Name = "btn_login"
+        Me.btn_login.Size = New System.Drawing.Size(100, 23)
+        Me.btn_login.TabIndex = 2
+        Me.btn_login.Text = "ورود"
+        Me.btn_login.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -71,27 +71,28 @@ Partial Class input_form
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 4
         '
-        'Button2
+        'btn_rest_password
         '
-        Me.Button2.Location = New System.Drawing.Point(98, 166)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 23)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "فراموشی رمز عبور"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_rest_password.Location = New System.Drawing.Point(98, 166)
+        Me.btn_rest_password.Name = "btn_rest_password"
+        Me.btn_rest_password.Size = New System.Drawing.Size(100, 23)
+        Me.btn_rest_password.TabIndex = 5
+        Me.btn_rest_password.Text = "فراموشی رمز عبور"
+        Me.btn_rest_password.UseVisualStyleBackColor = True
         '
         'input_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(304, 259)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btn_rest_password)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "input_form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "صفحه ورود"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -99,9 +100,9 @@ Partial Class input_form
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btn_login As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btn_rest_password As System.Windows.Forms.Button
 
 End Class
