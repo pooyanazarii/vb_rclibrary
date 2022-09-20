@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("makepjConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-P515RI8\SQLEXPRESS;Initial Catalog=aseman_library_vb;Integrat"& _ 
+            "ed Security=True")>  _
+        Public ReadOnly Property aseman_library_vbConnectionString() As String
+            Get
+                Return CType(Me("aseman_library_vbConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

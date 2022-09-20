@@ -25,29 +25,54 @@ Partial Class maindesk
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(maindesk))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btn_add_new_book = New System.Windows.Forms.Button()
+        Me.btn_renewal_sub = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.btn_add_new_person = New System.Windows.Forms.Button()
+        Me.btn_borrow_book = New System.Windows.Forms.Button()
+        Me.btn_renewal = New System.Windows.Forms.Button()
+        Me.btn_setting_person = New System.Windows.Forms.Button()
+        Me.btn_add_sub = New System.Windows.Forms.Button()
+        Me.btn_authors = New System.Windows.Forms.Button()
+        Me.btn_translator = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdcardnumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PhonenumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LandlinenumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BirthdateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UseridDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AcceptedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CreateddateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DeleteddateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EditeddateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GroupidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RoleidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DescriptionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PersonBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Aseman_library_vbDataSet2 = New rc_library.aseman_library_vbDataSet2()
         Me.MakepjDataSet = New rc_library.makepjDataSet()
         Me.PersonBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PersonTableAdapter = New rc_library.makepjDataSetTableAdapters.personTableAdapter()
-        Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.MakepjDataSet1 = New rc_library.makepjDataSet()
+        Me.Aseman_library_vbDataSet = New rc_library.aseman_library_vbDataSet()
+        Me.PersonBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PersonTableAdapter1 = New rc_library.aseman_library_vbDataSetTableAdapters.personTableAdapter()
+        Me.PersonTableAdapter2 = New rc_library.aseman_library_vbDataSet2TableAdapters.personTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PersonBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Aseman_library_vbDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MakepjDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PersonBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MakepjDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Aseman_library_vbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PersonBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,25 +85,25 @@ Partial Class maindesk
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "سیستم مدیریت کتابخانه"
         '
-        'Button1
+        'btn_add_new_book
         '
-        Me.Button1.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(561, 254)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(179, 41)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "ثبت کتاب جدید"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_add_new_book.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add_new_book.Location = New System.Drawing.Point(561, 254)
+        Me.btn_add_new_book.Name = "btn_add_new_book"
+        Me.btn_add_new_book.Size = New System.Drawing.Size(179, 41)
+        Me.btn_add_new_book.TabIndex = 1
+        Me.btn_add_new_book.Text = "ثبت کتاب جدید"
+        Me.btn_add_new_book.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_renewal_sub
         '
-        Me.Button3.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(280, 314)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(179, 41)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "تمدید عضویت "
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_renewal_sub.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_renewal_sub.Location = New System.Drawing.Point(280, 314)
+        Me.btn_renewal_sub.Name = "btn_renewal_sub"
+        Me.btn_renewal_sub.Size = New System.Drawing.Size(179, 41)
+        Me.btn_renewal_sub.TabIndex = 3
+        Me.btn_renewal_sub.Text = "تمدید عضویت "
+        Me.btn_renewal_sub.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -100,86 +125,199 @@ Partial Class maindesk
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "عملیات اشخاص"
         '
-        'Button4
+        'btn_add_new_person
         '
-        Me.Button4.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(280, 196)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(179, 41)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "ثبت شخص جدید الورود"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_add_new_person.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add_new_person.Location = New System.Drawing.Point(280, 196)
+        Me.btn_add_new_person.Name = "btn_add_new_person"
+        Me.btn_add_new_person.Size = New System.Drawing.Size(179, 41)
+        Me.btn_add_new_person.TabIndex = 6
+        Me.btn_add_new_person.Text = "ثبت شخص جدید الورود"
+        Me.btn_add_new_person.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_borrow_book
         '
-        Me.Button2.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(561, 314)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(179, 41)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "امانت کتاب"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_borrow_book.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_borrow_book.Location = New System.Drawing.Point(561, 314)
+        Me.btn_borrow_book.Name = "btn_borrow_book"
+        Me.btn_borrow_book.Size = New System.Drawing.Size(179, 41)
+        Me.btn_borrow_book.TabIndex = 7
+        Me.btn_borrow_book.Text = "امانت کتاب"
+        Me.btn_borrow_book.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_renewal
         '
-        Me.Button5.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(561, 387)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(179, 41)
-        Me.Button5.TabIndex = 8
-        Me.Button5.Text = "تمدید امانت"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_renewal.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_renewal.Location = New System.Drawing.Point(561, 387)
+        Me.btn_renewal.Name = "btn_renewal"
+        Me.btn_renewal.Size = New System.Drawing.Size(179, 41)
+        Me.btn_renewal.TabIndex = 8
+        Me.btn_renewal.Text = "تمدید امانت"
+        Me.btn_renewal.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btn_setting_person
         '
-        Me.Button6.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(280, 387)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(179, 41)
-        Me.Button6.TabIndex = 9
-        Me.Button6.Text = "تنظیمات اشخاص"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btn_setting_person.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_setting_person.Location = New System.Drawing.Point(280, 387)
+        Me.btn_setting_person.Name = "btn_setting_person"
+        Me.btn_setting_person.Size = New System.Drawing.Size(179, 41)
+        Me.btn_setting_person.TabIndex = 9
+        Me.btn_setting_person.Text = "تنظیمات اشخاص"
+        Me.btn_setting_person.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btn_add_sub
         '
-        Me.Button7.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(280, 254)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(179, 41)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "ثبت عضویت"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btn_add_sub.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add_sub.Location = New System.Drawing.Point(280, 254)
+        Me.btn_add_sub.Name = "btn_add_sub"
+        Me.btn_add_sub.Size = New System.Drawing.Size(179, 41)
+        Me.btn_add_sub.TabIndex = 10
+        Me.btn_add_sub.Text = "ثبت عضویت"
+        Me.btn_add_sub.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btn_authors
         '
-        Me.Button8.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(667, 196)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(73, 41)
-        Me.Button8.TabIndex = 11
-        Me.Button8.Text = "نویسنده"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btn_authors.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_authors.Location = New System.Drawing.Point(667, 196)
+        Me.btn_authors.Name = "btn_authors"
+        Me.btn_authors.Size = New System.Drawing.Size(73, 41)
+        Me.btn_authors.TabIndex = 11
+        Me.btn_authors.Text = "نویسنده"
+        Me.btn_authors.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btn_translator
         '
-        Me.Button9.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(561, 196)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(73, 41)
-        Me.Button9.TabIndex = 12
-        Me.Button9.Text = "مترجم"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btn_translator.Font = New System.Drawing.Font("Vazir", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_translator.Location = New System.Drawing.Point(561, 196)
+        Me.btn_translator.Name = "btn_translator"
+        Me.btn_translator.Size = New System.Drawing.Size(73, 41)
+        Me.btn_translator.TabIndex = 12
+        Me.btn_translator.Text = "مترجم"
+        Me.btn_translator.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NameDataGridViewTextBoxColumn, Me.IdDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.PersonBindingSource
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdDataGridViewTextBoxColumn, Me.FirstnameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.IdcardnumberDataGridViewTextBoxColumn, Me.AddressDataGridViewTextBoxColumn, Me.PhonenumberDataGridViewTextBoxColumn, Me.LandlinenumberDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.BirthdateDataGridViewTextBoxColumn, Me.UseridDataGridViewTextBoxColumn, Me.AcceptedDataGridViewTextBoxColumn, Me.CreateddateDataGridViewTextBoxColumn, Me.DeleteddateDataGridViewTextBoxColumn, Me.EditeddateDataGridViewTextBoxColumn, Me.GroupidDataGridViewTextBoxColumn, Me.RoleidDataGridViewTextBoxColumn, Me.DescriptionDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.PersonBindingSource2
         Me.DataGridView1.Location = New System.Drawing.Point(12, 138)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
         Me.DataGridView1.TabIndex = 13
+        '
+        'IdDataGridViewTextBoxColumn
+        '
+        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
+        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
+        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
+        Me.IdDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FirstnameDataGridViewTextBoxColumn
+        '
+        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name"
+        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "first_name"
+        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
+        '
+        'LastnameDataGridViewTextBoxColumn
+        '
+        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "last_name"
+        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "last_name"
+        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
+        '
+        'IdcardnumberDataGridViewTextBoxColumn
+        '
+        Me.IdcardnumberDataGridViewTextBoxColumn.DataPropertyName = "id_card_number"
+        Me.IdcardnumberDataGridViewTextBoxColumn.HeaderText = "id_card_number"
+        Me.IdcardnumberDataGridViewTextBoxColumn.Name = "IdcardnumberDataGridViewTextBoxColumn"
+        '
+        'AddressDataGridViewTextBoxColumn
+        '
+        Me.AddressDataGridViewTextBoxColumn.DataPropertyName = "address"
+        Me.AddressDataGridViewTextBoxColumn.HeaderText = "address"
+        Me.AddressDataGridViewTextBoxColumn.Name = "AddressDataGridViewTextBoxColumn"
+        '
+        'PhonenumberDataGridViewTextBoxColumn
+        '
+        Me.PhonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number"
+        Me.PhonenumberDataGridViewTextBoxColumn.HeaderText = "phone_number"
+        Me.PhonenumberDataGridViewTextBoxColumn.Name = "PhonenumberDataGridViewTextBoxColumn"
+        '
+        'LandlinenumberDataGridViewTextBoxColumn
+        '
+        Me.LandlinenumberDataGridViewTextBoxColumn.DataPropertyName = "landline_number"
+        Me.LandlinenumberDataGridViewTextBoxColumn.HeaderText = "landline_number"
+        Me.LandlinenumberDataGridViewTextBoxColumn.Name = "LandlinenumberDataGridViewTextBoxColumn"
+        '
+        'EmailDataGridViewTextBoxColumn
+        '
+        Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
+        Me.EmailDataGridViewTextBoxColumn.HeaderText = "email"
+        Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
+        '
+        'BirthdateDataGridViewTextBoxColumn
+        '
+        Me.BirthdateDataGridViewTextBoxColumn.DataPropertyName = "birth_date"
+        Me.BirthdateDataGridViewTextBoxColumn.HeaderText = "birth_date"
+        Me.BirthdateDataGridViewTextBoxColumn.Name = "BirthdateDataGridViewTextBoxColumn"
+        '
+        'UseridDataGridViewTextBoxColumn
+        '
+        Me.UseridDataGridViewTextBoxColumn.DataPropertyName = "user_id"
+        Me.UseridDataGridViewTextBoxColumn.HeaderText = "user_id"
+        Me.UseridDataGridViewTextBoxColumn.Name = "UseridDataGridViewTextBoxColumn"
+        '
+        'AcceptedDataGridViewTextBoxColumn
+        '
+        Me.AcceptedDataGridViewTextBoxColumn.DataPropertyName = "accepted"
+        Me.AcceptedDataGridViewTextBoxColumn.HeaderText = "accepted"
+        Me.AcceptedDataGridViewTextBoxColumn.Name = "AcceptedDataGridViewTextBoxColumn"
+        '
+        'CreateddateDataGridViewTextBoxColumn
+        '
+        Me.CreateddateDataGridViewTextBoxColumn.DataPropertyName = "created_date"
+        Me.CreateddateDataGridViewTextBoxColumn.HeaderText = "created_date"
+        Me.CreateddateDataGridViewTextBoxColumn.Name = "CreateddateDataGridViewTextBoxColumn"
+        '
+        'DeleteddateDataGridViewTextBoxColumn
+        '
+        Me.DeleteddateDataGridViewTextBoxColumn.DataPropertyName = "deleted_date"
+        Me.DeleteddateDataGridViewTextBoxColumn.HeaderText = "deleted_date"
+        Me.DeleteddateDataGridViewTextBoxColumn.Name = "DeleteddateDataGridViewTextBoxColumn"
+        '
+        'EditeddateDataGridViewTextBoxColumn
+        '
+        Me.EditeddateDataGridViewTextBoxColumn.DataPropertyName = "edited_date"
+        Me.EditeddateDataGridViewTextBoxColumn.HeaderText = "edited_date"
+        Me.EditeddateDataGridViewTextBoxColumn.Name = "EditeddateDataGridViewTextBoxColumn"
+        '
+        'GroupidDataGridViewTextBoxColumn
+        '
+        Me.GroupidDataGridViewTextBoxColumn.DataPropertyName = "group_id"
+        Me.GroupidDataGridViewTextBoxColumn.HeaderText = "group_id"
+        Me.GroupidDataGridViewTextBoxColumn.Name = "GroupidDataGridViewTextBoxColumn"
+        '
+        'RoleidDataGridViewTextBoxColumn
+        '
+        Me.RoleidDataGridViewTextBoxColumn.DataPropertyName = "role_id"
+        Me.RoleidDataGridViewTextBoxColumn.HeaderText = "role_id"
+        Me.RoleidDataGridViewTextBoxColumn.Name = "RoleidDataGridViewTextBoxColumn"
+        '
+        'DescriptionDataGridViewTextBoxColumn
+        '
+        Me.DescriptionDataGridViewTextBoxColumn.DataPropertyName = "description"
+        Me.DescriptionDataGridViewTextBoxColumn.HeaderText = "description"
+        Me.DescriptionDataGridViewTextBoxColumn.Name = "DescriptionDataGridViewTextBoxColumn"
+        '
+        'PersonBindingSource2
+        '
+        Me.PersonBindingSource2.DataMember = "person"
+        Me.PersonBindingSource2.DataSource = Me.Aseman_library_vbDataSet2
+        '
+        'Aseman_library_vbDataSet2
+        '
+        Me.Aseman_library_vbDataSet2.DataSetName = "aseman_library_vbDataSet2"
+        Me.Aseman_library_vbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'MakepjDataSet
         '
@@ -195,18 +333,6 @@ Partial Class maindesk
         '
         Me.PersonTableAdapter.ClearBeforeFill = True
         '
-        'NameDataGridViewTextBoxColumn
-        '
-        Me.NameDataGridViewTextBoxColumn.DataPropertyName = "name"
-        Me.NameDataGridViewTextBoxColumn.HeaderText = "name"
-        Me.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn"
-        '
-        'IdDataGridViewTextBoxColumn
-        '
-        Me.IdDataGridViewTextBoxColumn.DataPropertyName = "id"
-        Me.IdDataGridViewTextBoxColumn.HeaderText = "id"
-        Me.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn"
-        '
         'Button10
         '
         Me.Button10.Location = New System.Drawing.Point(100, 314)
@@ -221,6 +347,24 @@ Partial Class maindesk
         Me.MakepjDataSet1.DataSetName = "makepjDataSet"
         Me.MakepjDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'Aseman_library_vbDataSet
+        '
+        Me.Aseman_library_vbDataSet.DataSetName = "aseman_library_vbDataSet"
+        Me.Aseman_library_vbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PersonBindingSource1
+        '
+        Me.PersonBindingSource1.DataMember = "person"
+        Me.PersonBindingSource1.DataSource = Me.Aseman_library_vbDataSet
+        '
+        'PersonTableAdapter1
+        '
+        Me.PersonTableAdapter1.ClearBeforeFill = True
+        '
+        'PersonTableAdapter2
+        '
+        Me.PersonTableAdapter2.ClearBeforeFill = True
+        '
         'maindesk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -230,46 +374,71 @@ Partial Class maindesk
         Me.ClientSize = New System.Drawing.Size(752, 440)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btn_translator)
+        Me.Controls.Add(Me.btn_authors)
+        Me.Controls.Add(Me.btn_add_sub)
+        Me.Controls.Add(Me.btn_setting_person)
+        Me.Controls.Add(Me.btn_renewal)
+        Me.Controls.Add(Me.btn_borrow_book)
+        Me.Controls.Add(Me.btn_add_new_person)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_renewal_sub)
+        Me.Controls.Add(Me.btn_add_new_book)
         Me.Controls.Add(Me.Label1)
         Me.Name = "maindesk"
         Me.Text = "maindesk"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PersonBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Aseman_library_vbDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MakepjDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PersonBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MakepjDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Aseman_library_vbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PersonBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btn_add_new_book As System.Windows.Forms.Button
+    Friend WithEvents btn_renewal_sub As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents btn_add_new_person As System.Windows.Forms.Button
+    Friend WithEvents btn_borrow_book As System.Windows.Forms.Button
+    Friend WithEvents btn_renewal As System.Windows.Forms.Button
+    Friend WithEvents btn_setting_person As System.Windows.Forms.Button
+    Friend WithEvents btn_add_sub As System.Windows.Forms.Button
+    Friend WithEvents btn_authors As System.Windows.Forms.Button
+    Friend WithEvents btn_translator As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents MakepjDataSet As rc_library.makepjDataSet
     Friend WithEvents PersonBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents PersonTableAdapter As rc_library.makepjDataSetTableAdapters.personTableAdapter
-    Friend WithEvents NameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents MakepjDataSet1 As rc_library.makepjDataSet
+    Friend WithEvents Aseman_library_vbDataSet As rc_library.aseman_library_vbDataSet
+    Friend WithEvents PersonBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents PersonTableAdapter1 As rc_library.aseman_library_vbDataSetTableAdapters.personTableAdapter
+    Friend WithEvents Aseman_library_vbDataSet2 As rc_library.aseman_library_vbDataSet2
+    Friend WithEvents PersonBindingSource2 As System.Windows.Forms.BindingSource
+    Friend WithEvents PersonTableAdapter2 As rc_library.aseman_library_vbDataSet2TableAdapters.personTableAdapter
+    Friend WithEvents IdDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FirstnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LastnameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IdcardnumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AddressDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PhonenumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LandlinenumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmailDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BirthdateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents UseridDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AcceptedDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CreateddateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DeleteddateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EditeddateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupidDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RoleidDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DescriptionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
